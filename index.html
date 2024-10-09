@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Location Detection</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container mt-5">
+    <h2 class="text-center">User Location Detection</h2>
+
+    <div class="card mt-4">
+      <div class="card-header bg-info text-white">
+        Detect Your Location
+      </div>
+      <div class="card-body">
+        <p class="text-center">Click the button below to detect your current location:</p>
+        <div class="text-center">
+          <button id="location-btn" class="btn btn-info btn-lg">Get My Location</button>
+        </div>
+        <div id="loading-message" class="text-center mt-3" style="display:none;">
+          <p class="text-info">Fetching your location...</p>
+        </div>
+        <div id="location-result" class="mt-4 text-center">
+          <p id="coordinates"></p>
+          <p id="address"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
